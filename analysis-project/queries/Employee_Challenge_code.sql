@@ -28,7 +28,7 @@ ORDER BY emp_no, from_date DESC;
 select count(emp_no) AS "count"
 	, title
 INTO retiring_titles
-from titles
+from unique_titles
 GROUP BY title
 ORDER BY "count" DESC
 
